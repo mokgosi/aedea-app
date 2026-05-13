@@ -2,6 +2,55 @@
 
 set -e
 
+# ------------------------------------------------------------------
+# CONFIG
+# ------------------------------------------------------------------
+
+FRONTEND_REPO="git@github.com:mokgosi/aedea-frontend.git"
+BACKEND_REPO="git@github.com:mokgosi/aedea-api.git"
+
+# ------------------------------------------------------------------
+# Clone Repositories
+# ------------------------------------------------------------------
+
+echo "📥 Cloning repositories..."
+
+if [ ! -d "backend" ]; then
+
+    git clone $BACKEND_REPO backend
+
+else
+
+    echo "✅ Backend repo already exists."
+fi
+
+if [ ! -d "frontend" ]; then
+
+    git clone $FRONTEND_REPO frontend
+
+else
+
+    echo "✅ Frontend repo already exists."
+fi
+
+# ------------------------------------------------------------------
+# Environment Files
+# ------------------------------------------------------------------
+
+echo "📄 Setting up environment files..."
+
+if [ ! -f backend/.env.local ]; then
+
+    cp backend/.env.example backend/.env.local
+    cp backend/.env.example backend/.env
+fi
+
+if [ ! -f frontend/.env ]; then
+
+    cp frontend/.env.example frontend/.env
+fi
+
+
 echo "🚀 Starting full project setup..."
 
 # ------------------------------------------------------------------
