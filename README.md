@@ -1,8 +1,9 @@
 ## Simple Laravel/Symfony/React API Container
 
 
-# ⚙️ Features
+# ⚙️ Infrastracture:
 
+- Docker
 - NGINX
 - PHP 8
 - Mailpit
@@ -15,8 +16,8 @@
 
 Project/
 
- ├── backend/ - Symfony .. after app bootstrap by a script in the below section
- ├── frontend/ - React .. after app bootstrap by a script in the below section
+ ├── backend/ - Symfony .. after installation
+ ├── frontend/ - React .. after installationn 
 
  ├── docker/
  │    ├── nginx/
