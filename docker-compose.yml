@@ -78,6 +78,17 @@ services:
     volumes:
       - cloudbeaver:/opt/cloudbeaver/workspace
 
+  adminer:
+    image: adminer
+
+    restart: always
+
+    ports:
+      - "8080:8080"
+
+    depends_on:
+      - db
+
 volumes:
   cloudbeaver:
   db_data:
