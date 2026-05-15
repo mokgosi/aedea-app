@@ -39,7 +39,7 @@ $ git clone git@github.com:mokgosi/aedea-app.git
 $ cd aedea-app
 ```
 
-## 1. Setup Application - Docker Container
+## 2. Setup Application - Docker Container
 
 This script bootstraps your application into a structure shown above in section Folder Structure.
 NOTE: You may be required to refer to each repository documentation for specific and unique settings required.
@@ -51,6 +51,7 @@ $ ./scripts/setup.sh
 
 ✅ Setup completed successfully!"
 
+⚙️ Complete setup with important package environment values(if any) as stated on both frontend and backend READMEs:
 
 🌐 Frontend: http://localhost:5173
 
@@ -67,6 +68,4 @@ $ ./scripts/setup.sh
 - Password: password
 - Database: app
 
-
-# ⚙️ Complete setup important with important values:
 
