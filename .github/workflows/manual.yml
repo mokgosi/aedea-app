@@ -35,10 +35,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Run tests
+      needs: build
       run: echo "Running tests for ${{ inputs.name }}"
 
   deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Deploy application
+      needs: test
       run: echo "Deploying application for ${{ inputs.name }}"
