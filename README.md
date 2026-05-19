@@ -59,7 +59,7 @@ $ ./scripts/setup.sh
 
 📚 Cloudbeaver - Database UI: http://localhost:8978/
 
-📚 Adminer - Database UI: http://localhost:8978/
+📚 Adminer - Database UI: http://localhost:8080/
 
 ✉️ Mailpit - SMTP Server: http://localhost:1025
 
