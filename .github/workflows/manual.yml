@@ -38,7 +38,7 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Build application
-      run: echo "Building application for ${{ inputs.name }}"
+      run: echo "Building application for ${{ inputs.name }} using ${{ vars.JUST_NAME }}"
 
   test:
     runs-on: ubuntu-latest
