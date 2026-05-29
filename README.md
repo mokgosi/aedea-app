@@ -10,7 +10,6 @@
 - CloudBeaver - Database UI
 - Adminer - Dabatabase UI
 
----
 
 # 📁 Folder Structure
 
@@ -18,15 +17,14 @@ Project/
 
  ├── backend/ - Symfony .. after installation
  ├── frontend/ - React .. after installationn 
-
+ |
  ├── docker/
  │    ├── nginx/
  │    └── php/
- 
+ |
  ├── scripts/
- │    
  │    └── setup.sh
-
+ |
  ├── docker-compose.yml
 
 
